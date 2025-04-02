@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -19,7 +18,7 @@ const Index = () => {
               <a href="#features" className="text-sm text-gray-600 hover:text-navy transition-colors">Features</a>
               <a href="#" className="text-sm text-gray-600 hover:text-navy transition-colors">Solutions</a>
               <a href="#" className="text-sm text-gray-600 hover:text-navy transition-colors">Resources</a>
-              <a href="#" className="text-sm text-gray-600 hover:text-navy transition-colors">Pricing</a>
+              <a href="/pricing" className="text-sm text-gray-600 hover:text-navy transition-colors">Pricing</a>
               <Button variant="outline" className="ml-4">Log In</Button>
               <Button className="bg-indigo hover:bg-indigo-dark">Sign Up</Button>
             </div>
@@ -114,8 +113,8 @@ const Index = () => {
                 Get Started for Free
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                Contact Sales
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10" onClick={() => window.location.href = '/pricing'}>
+                View Pricing
               </Button>
             </div>
           </div>
@@ -130,7 +129,7 @@ const Index = () => {
               <h3 className="text-sm font-semibold text-navy mb-4">Product</h3>
               <ul className="space-y-2">
                 <li><a href="#" className="text-sm text-gray-600 hover:text-indigo">Features</a></li>
-                <li><a href="#" className="text-sm text-gray-600 hover:text-indigo">Pricing</a></li>
+                <li><a href="/pricing" className="text-sm text-gray-600 hover:text-indigo">Pricing</a></li>
                 <li><a href="#" className="text-sm text-gray-600 hover:text-indigo">Integrations</a></li>
                 <li><a href="#" className="text-sm text-gray-600 hover:text-indigo">Documentation</a></li>
               </ul>
